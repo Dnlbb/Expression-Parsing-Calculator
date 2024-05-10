@@ -4,19 +4,18 @@ This program is an expression parsing calculator that evaluates arithmetic expre
 
 ## Grammar
 The grammar used by the parser is defined as follows:
-
-- "<E> ::= <T> <E'>"
-- "<E'> ::= + <T> <E'> | - <T> <E'> | ε"
-- "<T> ::= <F> <T'>"
-- "<T'> ::= * <F> <T'> | / <F> <T'> | ε"
-- "<F> ::= <number> | <var> | ( <E> ) | - <F>"
+- `<E>` `::=` `<T>` `<E'>`
+- `<E'>` `::=` `+` `<T>` `<E'>` `|` `-` `<T>` `<E'>` `|` `ε`
+- `<T>` `::=` `<F>` `<T'>`
+- `<T'>` `::=` `*` `<F>` `<T'>` `|` `/` `<F>` `<T'>` `|` `ε`
+- `<F>` `::=` `<number>`
 Where:
-- "<E>" represents an expression,
-- "<T>" a term,
-- "<F>" a factor,
-- "<number>" a numeric literal,
-- "<var>" a variable, and
-- "ε" represents an empty production indicating the end of a sequence.
+- `<E>` represents an expression,
+- `<T>` a term,
+- `<F>` a factor,
+- `<number>` a numeric literal,
+- `<var>` a variable, and
+- `ε` represents an empty production indicating the end of a sequence.
 
 ## Features
 - Variable Handling: Users can introduce variables within expressions. If a variable has not been defined prior to its use, the calculator prompts the user to input a value.
