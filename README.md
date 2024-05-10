@@ -9,7 +9,7 @@ The grammar used by the parser is defined as follows:
 - `<T>` `::=` `<F>` `<T'>`
 - `<T'>` `::=` `*` `<F>` `<T'>` `|` `/` `<F>` `<T'>` `|` `ε`
 - `<F>` `::=` `<number>`
-Where:
+### Where:
 - `<E>` represents an expression,
 - `<T>` a term,
 - `<F>` a factor,
