@@ -1,5 +1,5 @@
-#Expression Parsing Calculator
-##Overview
+# Expression Parsing Calculator
+## Overview
 This program is an expression parsing calculator that evaluates arithmetic expressions containing variables. It leverages a recursive descent parser based on a specific grammar for evaluating expressions. It can handle basic arithmetic operations: addition, subtraction, multiplication, and division.
 
 ##Grammar
