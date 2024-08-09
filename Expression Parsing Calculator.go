@@ -204,15 +204,15 @@ func lexer( expr string, tokens chan<- Lexem)  {
             tokens <- Lexem{Tag: LPAREN, Image: "("}
             i++
             lastTokenType =LPAREN
-        case c == '/':
-            tokens <- Lexem{Tag: DIV, Image: "/"}
-            i++
-            lastTokenType = DIV
         case c == ')':
             rightParenCount++
             tokens <- Lexem{Tag: RPAREN, Image: ")"}
             i++
             lastTokenType = RPAREN
+        case c == '/':
+            tokens <- Lexem{Tag: DIV, Image: "/"}
+            i++
+            lastTokenType = DIV
         default:
             tokens <- Lexem{Tag: ERROR, Image: string(c)}
             i++
