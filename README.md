@@ -19,7 +19,7 @@ The grammar used by the parser is defined as follows:
 
 ## Features
 - Variable Handling: Users can introduce variables within expressions. If a variable has not been defined prior to its use, the calculator prompts the user to input a value.
-- Error Handling: The calculator handles errors such as division by zero and invalid tokens gracefully, returning appropriate error messages.
+- Error Handling: The calculator handles errors such as division by zero and invalid tokens gracefully, returning appropriate error messages
 ##Usage
 To run the program, provide the expression as a command-line argument:
 ```bash
